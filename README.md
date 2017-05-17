@@ -38,7 +38,7 @@ def lambda_handler(event, context):
             ddb.put_item(TableName=DDB_TABLE, Item=record['dynamodb']['NewImage'])
         if record['eventName'] == 'REMOVE':
             ddb.delete_item(TableName=DDB_TABLE, Key=record['dynamodb']['Keys'])
-        print('{{"BatchSize": {} }}'.format(len(event['Records'])))
+    print('{{"BatchSize": {} }}'.format(len(event['Records'])))
         
     return 'Successfully processed {} records.'.format(len(event['Records']))
 ```
