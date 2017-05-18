@@ -50,6 +50,7 @@ def lambda_handler(event, context):
 
 4. PROBLEM: after a few successful batches, it started to get "Function call failed" on certain request.
     > Cause: Default timeout was 3 second, which means when a function running for over 3 seconds, the process is freezed. Check out [Understanding Container Reuse in AWS Lambda](https://aws.amazon.com/blogs/compute/container-reuse-in-lambda/).
+    
     > Solution: increase timeout to 1 min
 
 5.
