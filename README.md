@@ -53,4 +53,5 @@ def lambda_handler(event, context):
     
     > Solution: increase timeout to 1 min
 
-5.
+5. When Table A has more R/W capacity that Table B, Table B might getting throttled.
+
