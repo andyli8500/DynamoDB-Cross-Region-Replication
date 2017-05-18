@@ -55,3 +55,6 @@ def lambda_handler(event, context):
 
 5. When Table A has more R/W capacity that Table B, Table B might getting throttled.
 
+
+## Using Open Source Github Amazon DynamoDB Cross-Region Replication Library
+Check [DynamoDB Cross-Region Replication](https://github.com/awslabs/dynamodb-cross-region-library/blob/master/README.md)
